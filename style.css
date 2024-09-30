@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    background-image: radial-gradient(blue, rgb(214, 3, 214));
+    overflow: hidden;
+}
+
+header{ 
+    & img{
+        display: flex;
+        justify-content: left;
+        width: 90px;
+    }
+    
+    & div{
+        & ul{
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            transform: translate(0px, -120px);
+            list-style: none;
+            font-size: 20px;
+        }
+    }
+}
+
+section{
+
+    & img{
+        margin-left: 50%;
+        width: 50em;
+        transform: translate(-200px, 0px);
+    }
+    
+    & div{
+        color: white;
+        transform: translate(0px, -300px);
+        border-style: solid;
+        width: 500px;
+        height: 300px;
+        border: none;
+        
+        & h1{
+            font-size: 5.2em;
+            font-family: fantasy;
+        }
+        
+        & p{
+            font-size: 20px;
+            transform: translate(0px, -50px);
+        }
+        
+        & input {
+            transform: translate(0px, -50px);
+            width: 60px;
+            font-size: 50px;
+            background-color: hsl(115, 92%, 68%);
+            border: none;
+            border-radius: 100px;
+        }
+        & input:hover{
+            background-color: hsl(115, 92%, 80%); 
+        }
+        & input:active{
+            background-color: tomato; 
+        }
+        
+    }
+}
+
+@keyframes anime{
+    0%{opacity: 0;};
+    100%{opacity: 1;}
+    from{transform: rotate(-10deg);}
+}
+
+
+#descolorir{
+    text-decoration: none;
+    color: white;
+}
